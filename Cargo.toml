@@ -1,0 +1,16 @@
+[package]
+name = "hyprzoom"
+version = "0.1.0"
+edition = "2024"
+authors = ["Aneesh Bhave <aneesh1701@gmail.com>"]
+description = "A simple yet feature rich zoom utility for Hyprland."
+
+[dependencies]
+clap = { version = "4.5.53", features = ["derive"] }
+hyprland = { git = "https://github.com/hyprland-community/hyprland-rs", branch = "master" }
+color-eyre = { version = "0.6", default-features = false }
+easer = "0.3.0"
+parse_duration = "2.1.1"
+log = "0.4.29"
+simplelog = "0.12.2"
+directories = "6.0.0"
