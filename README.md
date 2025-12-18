@@ -99,3 +99,4 @@ By default, it will
 ## Plans
 - animation caching (idek if this is worth it)
 - nix flake
+- toggle zoom (perhaps with an environment variable)
