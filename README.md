@@ -92,6 +92,23 @@ By default, it will
 - wait 1 second zoomed in
 - animate 15 frames over 0.25 seconds of zooming out
 
+## Notice
+A majority of this tool's functionality can be achieved using hyprland configuration.
+Rather than scrapping this project, it would be better to extend it to other compositors and add more configuration options.
+
+A configuration for `animations` like below can be used (highlighted by u/SOA-determined on Reddit)
+```
+animations {
+    enabled = true
+    bezier = easeOut, 0.16, 1, 0.3, 1
+    animation = zoomFactor, 1, 6, easeOut  # 6ds = 600ms (not 0.6!)
+  }
+  # Zoom binds
+  bind = Ctrl+Super, mouse:274, exec, hyprctl keyword cursor:zoom_factor 3.0
+  bindr = Ctrl+Super, mouse:274, exec, hyprctl keyword cursor:zoom_factor 1.0
+}
+```
+
 ## Acknowledgements
 - A similar tool [hypr-zoom](https://github.com/FShou/hypr-zoom) does exist but it seems to be abandoned (unmerged PRs)
 - The demo showcases a waybar setup adapted from [mechabar](github.com/sejjy/mechabar)
